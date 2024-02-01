@@ -8,7 +8,9 @@
 
 <body>
 
-    <form method="post"><!--it will be proccessed later on with php-->
+    <form method="post"><!--it will be processed later on with php-->
+        <input type="hidden" name="request_id" value="123">
+
         <p>Are you sure you want to delete this request?</p>
         <input type="submit" name="confirm" value="Delete">
         <input type="submit" name="cancel" value="Cancel">
