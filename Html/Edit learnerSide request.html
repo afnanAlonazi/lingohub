@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Language Learning Request</title>
+</head>
+<body>
+<form method="post">
+
+<!-- Hidden input to store the request id ,to edit an existing request -->
+<input type="hidden" name="request_id" value="123"> <!-- Example value, replace with actual request ID later -->
+
+<label for="lang">the language you want to learn</label>
+<select id="lang" name="language">
+    <option>Arabic</option>
+    <option>Bengali</option>
+    <option>Chinese</option>
+    <option selected>English</option>
+    <option>French</option>
+    <option>German</option>
+    <option>Hindi</option>
+    <option>Japanese</option>
+    <option>Javanese</option>
+    <option>Korean</option>
+    <option>Marathi</option>
+    <option>Portuguese</option>
+    <option>Russian</option>
+    <option>Spanish</option>
+    <option>Tamil</option>
+    <option>Telugu</option>
+    <option>Turkish</option>
+    <option>Urdu</option>
+    <option>Vietnamese</option>
+    
+</select><br>
+
+<label>Proficiency Level:</label> <br>
+<input type="radio" id="beginner" name="proficiency" value="Beginner">
+<label for="beginner">Beginner</label>
+<input type="radio" id="intermediate" name="proficiency" value="Intermediate">
+<label for="intermediate">Intermediate</label>
+<input type="radio" id="advanced" name="proficiency" value="Advanced">
+<label for="advanced">Advanced</label><br>
+
+
+<label for="Preferred_schedule">Preferred schedule</label>
+<select id="Preferred_schedule" name="schedule">
+<optgroup label="Weekdays">
+<option>Morning Sessions</option>
+<option>Afternoon Sessions</option>
+<option>Evening Sessions</option>
+</optgroup>
+<optgroup label="Weekends">
+    <option>Morning Sessions</option>
+    <option>Afternoon Sessions</option>
+    <option>Evening Sessions</option>
+    </optgroup>
+    <option>Flexiable </option>
+
+</select>
+
+<br><label for="duration">Session duration</label>
+<select id="duration" name="Session_duration">
+<option>20 minutes</option>
+<option selected>30 minutes</option>
+<option>40 minutes</option>
+<option>50 minutes</option>
+<option>60 minutes</option>
+
+</select>
+
+
+<br><input type="submit" value="Update Request">
+
+
+</form>
+</body>
+
+</html>
