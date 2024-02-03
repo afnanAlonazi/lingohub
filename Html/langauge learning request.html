@@ -11,7 +11,7 @@
 <body>
 <h2>find the right tutor for you</h2>
 
-<form method="post" ><!--will be sent to be proccesed later on  -->
+<form method="post" ><!--will be sent to be proccesed later on -->
 
 <label for="lang">the language you want to learn</label>
 <select id="lang" name="language">
@@ -46,21 +46,13 @@
 <label for="advanced">Advanced</label><br>
 
 
-<label for="Preferred_schedule">Preferred schedule</label>
-<select id="Preferred_schedule" name="schedule">
-<optgroup label="Weekdays">
-<option>Morning Sessions</option>
-<option>Afternoon Sessions</option>
-<option>Evening Sessions</option>
-</optgroup>
-<optgroup label="Weekends">
-    <option>Morning Sessions</option>
-    <option>Afternoon Sessions</option>
-    <option>Evening Sessions</option>
-    </optgroup>
-    <option>Flexiable </option>
 
-</select>
+<label for="Date">Prefered schedule:</label>
+<input type="datetime-local" id="Date" name="schedule">
+<!--Code from w3schools.com-->
+
+
+
 
 <br><label for="duration">Session duration</label>
 <select id="duration" name="Session_duration">
@@ -72,11 +64,18 @@
 
 </select>
 
+<br>
+<label for="comments">Commetns(Optional)</label>
+<input type="text" id="comments" name="comments">
+
 
 <br><input type="submit" value="Submit Request">
+<!--conformation on the submit must be added by php-->
+
+
 
 </form>
-<!-- Confirmation Box should be added -->
+
 
 </body>
 
