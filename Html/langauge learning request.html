@@ -14,7 +14,7 @@
 <form method="post" ><!--will be sent to be proccesed later on -->
 
 <label for="lang">the language you want to learn</label>
-<select id="lang" name="language">
+<select id="lang" name="language "  required>
     <option>Arabic</option>
     <option>Bengali</option>
     <option>Chinese</option>
@@ -38,7 +38,7 @@
 </select><br>
 
 <label>Proficiency Level:</label> <br>
-<input type="radio" id="beginner" name="proficiency" value="Beginner">
+<input type="radio" id="beginner" name="proficiency" value="Beginner" required>
 <label for="beginner">Beginner</label>
 <input type="radio" id="intermediate" name="proficiency" value="Intermediate">
 <label for="intermediate">Intermediate</label>
@@ -49,13 +49,13 @@
 
 <label for="Date">Prefered schedule:</label>
 <input type="datetime-local" id="Date" name="schedule" required>
-<!--Code from w3schools.com-->
+
 
 
 
 
 <br><label for="duration">Session duration</label>
-<select id="duration" name="Session_duration">
+<select id="duration" name="Session_duration"  required>
 <option>20 minutes</option>
 <option selected>30 minutes</option>
 <option>40 minutes</option>
