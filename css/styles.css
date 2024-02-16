@@ -5,9 +5,11 @@
   box-sizing: border-box;
 
 } */
-
+html{
+  font-family:Arial, sans-serif;
+}
 body{
-  font-family: 'Open Sans', sans-serif;
+
     display: flex ;
     flex-direction: column;
     min-height: 100%;
@@ -99,7 +101,7 @@ footer{
   margin-top: auto;
   position:absolute;
   background: #7C93C3;
-  color: white;
+  color: #353535;
   
   bottom: -60px;
   width: 100%;
@@ -132,7 +134,7 @@ footer{
     .tableF a {
       
       text-decoration: none;
-      color: white;
+      color: #353535;
 
     }
     
@@ -174,7 +176,7 @@ padding-right: 50px;
 padding-top: 100;
   margin: 50px; 
   margin-bottom: 10px;
-  color: #2c7da0 ; 
+  color: #353535 ; 
   font-size: 1.4cm;
   background: none;
 
@@ -182,7 +184,7 @@ padding-top: 100;
 .Slogantext {  
 
   padding: 10px; 
-  color:#61a5c2; 
+  color:#383737; 
   font-size: 0.5cm;
   padding-left: 70px;
   margin-bottom: 10px;
@@ -194,7 +196,7 @@ padding-top: 100;
 #signInBody{
   margin: 0;
   padding: 0;
-  background: linear-gradient(120deg, #2c7da0, #61a5c2, #b9e2f0);
+  background: linear-gradient(120deg,  #879fd1 , #9eb8d9 , #eef5ff);
   height: 100vh;
   overflow: hidden;
 }
@@ -235,7 +237,7 @@ padding-top: 100;
 }
 form .text_field{
   position: relative;
-  border-bottom: 2px solid #2c7da0;
+  border-bottom: 2px solid #7C93C3;
   margin: 30px 0;
 }
 
@@ -251,7 +253,7 @@ form .text_field{
 {
   position: absolute;
   left: 5px;
-  color: #2c7da0;
+  color: #7C93C3;
   transform: translateY(-50%);
   font-size: small;
   pointer-events: none;
@@ -268,6 +270,16 @@ form .text_field{
   pointer-events: none;
   background: none;
   margin-top: 20px;
+}
+.signup-option{
+  color: #7C93C3;
+  position: relative;
+top: -10px;
+font-size: small;
+}
+#singup-login{
+  font-weight: bold;
+  font-size: medium;
 }
 /* end of login + signup layout */
 
@@ -349,7 +361,7 @@ form .text_field{
     color: #8e9aaf;
     margin-bottom: 10px;
    } 
-.ManageProfileBody .right ul , #delet_account{
+.ManageProfileBody .right ul , #delet_account , #signin {
   margin-top: 20px;
   margin-left: 100px;
  
@@ -364,7 +376,7 @@ form .text_field{
   width: 75%;
 }
  /* to make our lonks leading to edit and delete page look like buttons */
- .right ul li,#delet_account {
+ .right ul li,#delet_account  {
             display: inline-block;
             position:center;
             padding: 6px 12px;
@@ -375,11 +387,31 @@ form .text_field{
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            width: 120px;
+            /* width: 120px; */
             text-align: center;
         }
+        #signin{
 
-  .right ul li:hover {
+          display: inline-block;
+          position:center;
+          padding: 6px 12px;
+          left:50%;
+          background-color: #7C93C3;
+          color: #353535;
+          text-decoration: none;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          /* width: 120px; */
+          text-align: center; 
+        }
+        #signin:hover  {
+          background-color:  #c7d3e1; /* Hover effect */
+        }
+          .textMultiline{
+            width: 250px;
+           } 
+         .right ul li:hover {
           background-color: #7C93C3; /* Hover effect */}
           .textMultiline{
             width: 250px;
@@ -388,7 +420,7 @@ form .text_field{
 
 #cancel_Edit,#delet_account{
   background-color: #d73046;
-  
+  border:none;
 }
 #cancel_Edit:hover ,#delet_account:hover {
   background-color: #e38d99;
@@ -396,7 +428,7 @@ form .text_field{
 }
 #save_Edit{
   background-color: #20bf55;
-
+  border:none;
 }
 #save_Edit:hover{
   background-color: #86d7a1;
