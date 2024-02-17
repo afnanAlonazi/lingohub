@@ -103,7 +103,6 @@ footer{
   position:absolute;
   background: #7C93C3;
   color: #353535;
-  
   bottom: -60px;
   width: 100%;
 }
@@ -438,9 +437,16 @@ font-size: small;
 
 
 /* ViewRateAndReviews */
+
+.Rate{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .checked {
   color: orange;
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .unchecked {
@@ -452,8 +458,9 @@ font-size: small;
   margin-top: 12px;
   border: 1.5px solid;
   border-radius: 10px;
-  background-color: rgb(248, 250, 219);
+  background-color:#c7d3e1;;
   margin-bottom: 10px;
+  padding: 20px 10px 10px 10px;
 }
 
 .innerDiv {
@@ -469,6 +476,19 @@ font-size: small;
   border-radius: 50%;
 }
 
+
+.Reviewers {
+  vertical-align: top;
+  line-height: 35px;
+  margin-left: 10px;
+}
+
+.date {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  text-align: right;
+}
 
 
 
