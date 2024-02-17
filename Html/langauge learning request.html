@@ -1,61 +1,140 @@
 <!DOCTYPE html>
 <html>
 <html lang="en">
+
+<!--Posting language learning request
+Author:renad-->
+
 <head>
     <title>learner Request</title>
     <meta charset="utf-8">
-    
-
 </head>
 
 <body>
+    <!--header-->
+  <header id="PartnerHPage">
+    <img class="logo" src="weblogo.gif" alt="logo" height="50">
+        
+    <ul class="nav_bar">
+        <li><a href="RequestManageEditing.html">Learning request</a></li>
+        <li><a href="CurrentJobsHO.html">Current session</a></li>
+        <li><a href="previouseJobHO.html">Previous session</a></li>
+        <li><a href="OffersHO.html">Request status</a></li>
+        <li><a href="ProfileManageHO.html">Manage Profile</a></li>
+    </ul>
+       
+    <a href="homepage.html"><button>Sign out</button></a>
+</header>
+<!--header end-->
 <h2>find the right tutor for you</h2>
 
 <form method="post" ><!--will be sent to be proccesed later on -->
 
-<label for="lang">the language you want to learn</label>
-<select id="lang" name="language">
-    <option>Arabic</option>
-    <option>Bengali</option>
-    <option>Chinese</option>
-    <option selected>English</option>
-    <option>French</option>
-    <option>German</option>
-    <option>Hindi</option>
-    <option>Japanese</option>
-    <option>Javanese</option>
-    <option>Korean</option>
-    <option>Marathi</option>
-    <option>Portuguese</option>
-    <option>Russian</option>
-    <option>Spanish</option>
-    <option>Tamil</option>
-    <option>Telugu</option>
-    <option>Turkish</option>
-    <option>Urdu</option>
-    <option>Vietnamese</option>
+<label for="lang">The language you want to learn</label>
+<select id="lang" name="language "  required>
+   
+    <option value="Afrikaans">Afrikaans</option>
+    <option value="Albanian">Albanian</option>
+    <option value="Arabic">Arabic</option>
+    <option value="Armenian">Armenian</option>
+    <option value="Basque">Basque</option>
+    <option value="Bengali">Bengali</option>
+    <option value="Bulgarian">Bulgarian</option>
+    <option value="Catalan">Catalan</option>
+    <option value="Cambodian">Cambodian</option>
+    <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
+    <option value="Croatian">Croatian</option>
+    <option value="Czech">Czech</option>
+    <option value="Danish">Danish</option>
+    <option value="Dutch">Dutch</option>
+    <option selected value="English">English</option>
+    <option value="Estonian">Estonian</option>
+    <option value="Fiji">Fiji</option>
+    <option value="Finnish">Finnish</option>
+    <option value="French">French</option>
+    <option value="Georgian">Georgian</option>
+    <option value="German">German</option>
+    <option value="Greek">Greek</option>
+    <option value="Gujarati">Gujarati</option>
+    <option value="Hebrew">Hebrew</option>
+    <option value="Hindi">Hindi</option>
+    <option value="Hungarian">Hungarian</option>
+    <option value="Icelandic">Icelandic</option>
+    <option value="Indonesian">Indonesian</option>
+    <option value="Irish">Irish</option>
+    <option value="Italian">Italian</option>
+    <option value="Japanese">Japanese</option>
+    <option value="Javanese">Javanese</option>
+    <option value="Korean">Korean</option>
+    <option value="Latin">Latin</option>
+    <option value="Latvian">Latvian</option>
+    <option value="Lithuanian">Lithuanian</option>
+    <option value="Macedonian">Macedonian</option>
+    <option value="Malay">Malay</option>
+    <option value="Malayalam">Malayalam</option>
+    <option value="Maltese">Maltese</option>
+    <option value="Maori">Maori</option>
+    <option value="Marathi">Marathi</option>
+    <option value="Mongolian">Mongolian</option>
+    <option value="Nepali">Nepali</option>
+    <option value="Norwegian">Norwegian</option>
+    <option value="Persian">Persian</option>
+    <option value="Polish">Polish</option>
+    <option value="Portuguese">Portuguese</option>
+    <option value="Punjabi">Punjabi</option>
+    <option value="Quechua">Quechua</option>
+    <option value="Romanian">Romanian</option>
+    <option value="Russian">Russian</option>
+    <option value="Samoan">Samoan</option>
+    <option value="Serbian">Serbian</option>
+    <option value="Slovak">Slovak</option>
+    <option value="Slovenian">Slovenian</option>
+    <option value="Spanish">Spanish</option>
+    <option value="Swahili">Swahili</option>
+    <option value="Swedish ">Swedish </option>
+    <option value="Tamil">Tamil</option>
+    <option value="Tatar">Tatar</option>
+    <option value="Telugu">Telugu</option>
+    <option value="Thai">Thai</option>
+    <option value="Tibetan">Tibetan</option>
+    <option value="Tonga">Tonga</option>
+    <option value="Turkish">Turkish</option>
+    <option value="Ukrainian">Ukrainian</option>
+    <option value="Urdu">Urdu</option>
+    <option value="Uzbek">Uzbek</option>
+    <option value="Vietnamese">Vietnamese</option>
+    <option value="Welsh">Welsh</option>
+    <option value="Xhosa">Xhosa</option>
     
 </select><br>
+<!-- 
+Code above adapted from Stack Overflow: 
+"List of all country languages for dropdown select menu HTML FORM [closed]" 
+(https://stackoverflow.com/questions/38909766/list-of-all-country-languages-for-dropdown-select-menu-html-form)
+-->
+
 
 <label>Proficiency Level:</label> <br>
-<input type="radio" id="beginner" name="proficiency" value="Beginner">
+<input type="radio" id="beginner" name="proficiency" value="Beginner" required>
 <label for="beginner">Beginner</label>
-<input type="radio" id="intermediate" name="proficiency" value="Intermediate">
+<input type="radio" id="intermediate" name="proficiency" value="Intermediate" required>
 <label for="intermediate">Intermediate</label>
-<input type="radio" id="advanced" name="proficiency" value="Advanced">
+<input type="radio" id="advanced" name="proficiency" value="Advanced" required>
 <label for="advanced">Advanced</label><br>
 
 
 
 <label for="Date">Prefered schedule:</label>
 <input type="datetime-local" id="Date" name="schedule" required>
-<!--Code from w3schools.com-->
+<!--code adopted from w3schools:HTML Input Types
+url:https://www.w3schools.com/html/html_form_input_types.asp-->
+
 
 
 
 
 <br><label for="duration">Session duration</label>
-<select id="duration" name="Session_duration">
+<select id="duration" name="Session_duration"  required>
 <option>20 minutes</option>
 <option selected>30 minutes</option>
 <option>40 minutes</option>
@@ -65,16 +144,29 @@
 </select>
 
 <br>
-<label for="comments">Commetns:(Optional)</label>
-<textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here...">
-Add any comment if you want...
-    </textarea>
-
+<label for="comments">Comments (Optional)</label><br>
+<textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
 
 <br><input type="submit" value="Submit Request">
-<!--we should add a conformition box later on maybe its done with php-->
+<!--we should add a conformition box later on maybe its done with java script-->
 
+<footer>
+</section>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- end service section-->
 
+<p><ul class="icons">
+    <li><a href="https://web.whatsapp.com"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+    <li><a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    <li><a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    <li><a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
+</ul></p>
+   
+        <div class="footer-copyright">
+            <p>Copyright &copy; 2023 All Rights Reserved to NAJN Team </p>
+        </div>
+</footer>
 
 </form>
 
