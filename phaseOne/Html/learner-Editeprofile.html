@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>My Profile</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="../css/styles.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body id = "ProfileManage">
+    <header id = "LearnerHPage">
+        <img class = "logo" src = "weblogo.png" alt = "logo" height=50>
+            
+            <ul class = "nav_bar">
+                <li><a href = "leanerhome.html"> Home</a></li>
+                <li><a href = "learnerReq.html"> Request</a></li>
+                <li><a href = "LearnerViewCurrentSessions.html">Current session</a></li>
+                <li><a href = "LearnerViewPreviousSessions.html">Previous session</a></li>
+                <li><a href = "partnerList.html">Partner list</a></li>
+                <li><a href = "learner-profile.html">Manage Profile</a></li>
+            </ul>
+           
+            <div >
+                <button class="cta" onclick="window.location.href='homepage.html'">Sign out</button>
+            </div>
+    </header>
+
+
+
+
+ <div class ="ManageProfileBody" >
+        <div class="left">
+            <img  src="femalelearner1.jpg" id="img" alt="Personal photo">   
+            <label id="personal-picLabel" for="personal-pic">update image</label>
+            <input type="file" name="personal-pic"  id="personal-pic">
+            
+         </div>
+
+        <div class="right">
+                       
+                        <h3>Edit Profile</h3>
+                     <div class="info_data">
+                        <div class="data">
+                            <h4>First name</h4> 
+                            <input type = "text" placeholder="Haifa">
+                            <h4>Email</h4> 
+                            <input type = "text" placeholder="haifalingo@gmail.com">
+                            <h4>city</h4> 
+                            <select name = "city">
+                                <option disabled>- Select a city -</option>
+                                <option selected>Riyadh</option>
+                                <option>Makkah</option>
+                                <option>Madinah</option>
+                                <option>Buraydah</option>
+                                <option>Dammam</option>
+                                <option>Abha</option>
+                                <option>Tabuk</option>
+                                <option>Hail</option>
+                                <option>Arar</option>
+                                <option>Jizan</option>
+                                <option>Najran</option>
+                                <option>Al-Baha</option>
+                                <option>Sakaka</option>
+                                </select>
+                        
+                         </div>
+                         <div class="data">
+                            <h4>Last name</h4>
+                            <input type = "text" placeholder="Ahmed">
+                            <h4>Password</h4> 
+                            <input type = "password" placeholder="**********"  minlength="8" maxlength="16" >
+                            <h4>Location</h4> 
+                            <input type="text" name="phone" value= "" placeholder="Al-waten street , alsahafa , Riyadh<" maxlength="10">
+                         </div>
+
+                           
+
+                    </div>
+                    <br><br><br><br><br><br>
+                    <div class="button-container2">
+                        <button class="accept" onclick="window.location.href='learner-profile.html'" >Save Edit</button>
+                        <button class="reject" onclick="window.location.href='learner-profile.html'" >Cancel Edit</button>
+                    </div> 
+                    <!--  <ul id="learnerProfilbutton">
+                       <li id="greenButton"> <a href = "learner-profile.html"><input  id="greenButton" type="submit" value="Save Edit" >  </a></li>
+                       <li id="reedButton"> <input  id="reedButton" type="reset" value="Cancel Edit" ></li>
+                    </ul>  -->
+         </div>
+         <!--End of class "right" -->
+
+ </div><!--End of class "ManageProfileBody" -->
+
+ <footer>
+    <!-- <table class="tableF">
+        <tr>
+            <th><a href="aboutUs.html"> About Us </a></th>
+            <th><a href="FAQ.html"> FAQs </a></th>
+            <th><a href="ContactUs.html"> Contact Us </a></th>
+        </tr>
+    </table> -->
+  <div class="icons">
+            <h4>Share the website</h4>
+        
+            <a href="https://facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+    
+            <a href="https://twitter.com" target="_blank">
+                <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+    
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+    
+            <a href="https://instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+    
+            <a href="https://web.whatsapp.com" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+            </a>
+            <br>
+            lingo hub &copy; 2024
+        </div>
+</footer>
+    
+    
+    </body>
+
+      </html>
