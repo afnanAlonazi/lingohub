@@ -139,7 +139,6 @@ CREATE TABLE `partner` (
   `partnerID` int(11) NOT NULL,
   `email` varchar(100) NOT NULL,
   `phone` char(10) NOT NULL,
-  `password` varchar(30) NOT NULL,
   `city` varchar(30) NOT NULL,
   `photo` varchar(255) NOT NULL DEFAULT 'defultpic.jpg',
   `bio` text NOT NULL,
