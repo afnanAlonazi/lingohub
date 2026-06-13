@@ -121,7 +121,6 @@ CREATE TABLE `learner` (
   `lastName` varchar(25) NOT NULL,
   `learnerID` int(11) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `password` varchar(25) NOT NULL,
   `city` varchar(30) NOT NULL,
   `photo` varchar(255) NOT NULL DEFAULT 'defultpic.jpg',
   `location` varchar(255) NOT NULL
